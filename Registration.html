@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>asdfdfgs</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <br>
+                <label for="emailID">Почтовый ящик*</label>
+                <input type="email" class="form-control" id="emailID" aria-describedby="podskazka" placeholder="Введите email" required>
+                <small id="podskazka" class="form-text text-muted">Пример: 1234567890@mail.ru</small>
+            </div>
+
+            <div class="form-group">
+                <label for="passID">Пароль*</label>
+                <input type="password" class="form-control" id="passID" placeholder="Введите пароль" required>
+            </div>
+            <div class="form-group">
+                <label for="passID">Повтор пароля*</label>
+                <input type="password" class="form-control" id="passID" placeholder="Повторите пароль" required>
+            </div>
+            
+            <div class="row form-group">
+                <div class="col-control form-control-lg">
+                    Фамилия*
+                    <input type="text" class="form-control" placeholder="Введите фамилию" required>
+                </div>
+                <div class="col-control form-control-lg">
+                    Имя*
+                    <input type="text" class="form-control" placeholder="Введите имя" required>
+                </div>
+                <div class="col-control form-control-lg">
+                    Отчество*
+                    <input type="text" class="form-control" placeholder="Введите отчество" required>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row form-group">
+                <div class="col">
+                    Город*
+                    <select class="form-control" id="city" required>
+                        <option selected>Томск</option>
+                        <option>Новосибирск</option>
+                        <option>Москва</option>
+                        <option>Питер</option>
+                    </select>
+                </div>
+                <br>
+            </div>
+            <br>
+            <p>Дата рождения*</p>
+            <div class="row form-group">
+                    <div class="col">
+                        Число
+                        <input type="text" class="form-control" placeholder="Введите число" required>
+                    </div>
+                    <div class="col">
+                        Месяц
+                        <select class="form-control" id="city" required>
+                            <option>Январь</option>
+                            <option>Февраль</option>
+                            <option>Март</option>
+                            <option>Апрель</option>
+                            <option>Май</option>
+                            <option>Июнь</option>
+                            <option>Июль</option>
+                            <option>Август</option>
+                            <option>Сентябрь</option>
+                            <option>Октябрь</option>
+                            <option>Ноябрь</option>
+                            <option>Декабрь</option>
+                        </select>
+                    </div>
+                <div class="col">
+                    Год
+                    <input type="text" class="form-control" placeholder="Введите год" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+
+<script src="jquery-3.6.0.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+       
+<script type="text/javascript">
+    $('#sliderID').on("change", function(){
+        $('#sliderText').text($('#sliderID').val());
+    });
+</script>
+
+</body>
+</html>
